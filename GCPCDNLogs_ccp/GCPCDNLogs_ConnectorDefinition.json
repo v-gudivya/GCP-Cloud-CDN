@@ -1,26 +1,26 @@
 {
-  "name": "GCPCloudCDNLogsCCPDefinition",
+  "name": "GCPCDNLogsCCPDefinition",
   "apiVersion": "2022-09-01-preview",
   "type": "Microsoft.SecurityInsights/dataConnectorDefinitions",
   "location": "{{location}}",
   "kind": "Customizable",
   "properties": {
     "connectorUiConfig": {
-      "id": "GCPCloudCDNLogsCCPDefinition",
-      "title": "GCP Cloud CDN",
+      "id": "GCPCDNLogsCCPDefinition",
+      "title": "Google Cloud Platform CDN",
       "publisher": "Microsoft",
       "descriptionMarkdown": "",
       "graphQueriesTableName": "GCP_CDNV2_CL",
       "graphQueries": [
         {
           "metricName": "Total events received",
-          "legend": "GCP Cloud CDN Logs",
+          "legend": "GCP CDN Logs",
           "baseQuery": "{{graphQueriesTableName}}"
         }
       ],
       "sampleQueries": [
         {
-          "description": "Get Sample Events of GCP Cloud CDN",
+          "description": "Get Sample of GCPCDN logs",
           "query": "{{graphQueriesTableName}}\n | take 10"
         }
       ],
@@ -85,7 +85,7 @@
             {
               "type": "Markdown",
               "parameters": {
-                "content": "#### 2. Enable Cloud CDN logs \n In the Google Cloud Console, navigate to Cloud CDN section. Enable cloud logging if not enabled previously, and save the changes.\n\nFor more information: [Link to documentation]()"
+                "content": "#### 2. Enable CDN logs \n In the Google Cloud Console, navigate to Cloud CDN section. Enable cloud logging if not enabled previously, and save the changes.\n\nFor more information: [Link to documentation]()"
               }
             },
             {
@@ -103,7 +103,7 @@
               "parameters": {}
             }
           ],
-          "title": "Connect GCP Cloud CDN to Microsoft Sentinel\n"
+          "title": "Connect GCP CDN to Microsoft Sentinel\n"
         }
       ]
     }
