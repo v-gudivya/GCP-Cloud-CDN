@@ -1,6 +1,6 @@
 {
   "name": "GCPCloudCDNLogsCCPDefinition",
-  "apiVersion": "0000-00-00-preview",
+  "apiVersion": "2022-09-01-preview",
   "type": "Microsoft.SecurityInsights/dataConnectorDefinitions",
   "location": "{{location}}",
   "kind": "Customizable",
@@ -10,7 +10,7 @@
       "title": "GCP Cloud CDN",
       "publisher": "Microsoft",
       "descriptionMarkdown": "",
-      "graphQueriesTableName": "",
+      "graphQueriesTableName": "GCP_CDNV2_CL",
       "graphQueries": [
         {
           "metricName": "Total events received",
