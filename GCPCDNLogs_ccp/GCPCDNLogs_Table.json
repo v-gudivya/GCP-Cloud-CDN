@@ -300,7 +300,7 @@
                 "type": "string"
             },
             {
-                "name": "OperationUser",
+                "name": "OperationProducer",
                 "type": "string"
             },
             {
@@ -417,6 +417,10 @@
             },
             {
                 "name": "AuthzPolicyInfoResult",
+                "type": "string"
+            },
+            {
+                "name": "LoadBalancingScheme",
                 "type": "string"
             },
             {
