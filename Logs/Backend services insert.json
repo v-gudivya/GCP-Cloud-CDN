@@ -1,0 +1,145 @@
+[
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "scuba@np-lab.co.il"
+      },
+      "requestMetadata": {
+        "callerIp": "121.241.55.74",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36,gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2025-02-18T11:45:35.406306Z",
+          "reason": "8uSywAYQGg5Db2xpc2V1bSBGbG93cw",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "compute.googleapis.com",
+      "methodName": "beta.compute.backendServices.insert",
+      "authorizationInfo": [
+        {
+          "resource": "projects/msccp-test/global/backendServices/cdn-backend",
+          "permission": "compute.backendServices.create",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/msccp-test/global/backendServices/cdn-backend",
+            "type": "compute.backendServices"
+          },
+          "permissionType": "ADMIN_WRITE"
+        },
+        {
+          "resource": "projects/msccp-test/global/healthChecks/cdn-health-check",
+          "permission": "compute.healthChecks.useReadOnly",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/msccp-test/global/healthChecks/cdn-health-check",
+            "type": "compute.healthChecks"
+          },
+          "permissionType": "ADMIN_READ"
+        },
+        {
+          "resource": "projects/msccp-test/zones/us-central1-c/instanceGroups/instance-group-cdn",
+          "permission": "compute.instanceGroups.use",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/msccp-test/zones/us-central1-c/instanceGroups/instance-group-cdn",
+            "type": "compute.instanceGroups"
+          },
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/msccp-test/global/backendServices/cdn-backend",
+      "request": {
+        "enableCDN": true,
+        "sessionAffinity": "NONE",
+        "localityLbPolicy": "ROUND_ROBIN",
+        "compressionMode": "DISABLED",
+        "protocol": "HTTP",
+        "ipAddressSelectionPolicy": "IPV4_ONLY",
+        "portName": "http",
+        "name": "cdn-backend",
+        "description": "",
+        "backends": [
+          {
+            "capacityScaler": "1.0",
+            "maxUtilization": "0.8",
+            "group": "projects/msccp-test/zones/us-central1-c/instanceGroups/instance-group-cdn",
+            "balancingMode": "UTILIZATION"
+          }
+        ],
+        "healthChecks": [
+          "projects/msccp-test/global/healthChecks/cdn-health-check"
+        ],
+        "@type": "type.googleapis.com/compute.backendServices.insert",
+        "cdnPolicy": {
+          "cacheMode": "CACHE_ALL_STATIC",
+          "serveWhileStale": "0",
+          "cacheKeyPolicy": {
+            "includeQueryString": true,
+            "includeHost": true,
+            "includeProtocol": true
+          },
+          "negativeCaching": false,
+          "maxTtl": "86400",
+          "defaultTtl": "3600",
+          "clientTtl": "3600"
+        },
+        "securityPolicy": "projects/msccp-test/global/securityPolicies/default-security-policy-for-backend-service-cdn",
+        "logConfig": {
+          "sampleRate": "1.0",
+          "enable": true
+        },
+        "timeoutSec": "30",
+        "connectionDraining": {
+          "drainingTimeoutSec": "300"
+        },
+        "loadBalancingScheme": "EXTERNAL_MANAGED"
+      },
+      "response": {
+        "targetId": "985226515389729840",
+        "operationType": "insert",
+        "status": "RUNNING",
+        "startTime": "2025-02-18T03:45:35.235-08:00",
+        "insertTime": "2025-02-18T03:45:35.230-08:00",
+        "name": "operation-1739879134668-62e692dc626b1-612a0770-99571e29",
+        "selfLink": "https://www.googleapis.com/compute/beta/projects/msccp-test/global/operations/operation-1739879134668-62e692dc626b1-612a0770-99571e29",
+        "id": "5628617759057890352",
+        "selfLinkWithId": "https://www.googleapis.com/compute/beta/projects/msccp-test/global/operations/5628617759057890352",
+        "progress": "0",
+        "user": "scuba@np-lab.co.il",
+        "@type": "type.googleapis.com/operation",
+        "targetLink": "https://www.googleapis.com/compute/beta/projects/msccp-test/global/backendServices/cdn-backend"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "global"
+        ]
+      }
+    },
+    "insertId": "9qmhdkduequ",
+    "resource": {
+      "type": "gce_backend_service",
+      "labels": {
+        "backend_service_id": "985226515389729840",
+        "project_id": "msccp-test",
+        "location": "global"
+      }
+    },
+    "timestamp": "2025-02-18T11:45:34.706893Z",
+    "severity": "NOTICE",
+    "labels": {
+      "compute.googleapis.com/root_trigger_id": "241fd119-89d5-4107-9cbc-0f0651facc05"
+    },
+    "logName": "projects/msccp-test/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operation-1739879134668-62e692dc626b1-612a0770-99571e29",
+      "producer": "compute.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2025-02-18T11:45:35.555224005Z"
+  }
+]

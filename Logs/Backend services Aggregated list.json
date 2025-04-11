@@ -1,0 +1,60 @@
+[
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "scuba@np-lab.co.il"
+      },
+      "requestMetadata": {
+        "callerIp": "121.241.55.74",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36,gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2025-02-18T11:51:15.562195Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "compute.googleapis.com",
+      "methodName": "beta.compute.backendServices.aggregatedList",
+      "authorizationInfo": [
+        {
+          "resource": "projects/msccp-test",
+          "permission": "compute.backendServices.list",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "resourcemanager",
+            "name": "projects/msccp-test",
+            "type": "resourcemanager.projects"
+          },
+          "permissionType": "ADMIN_READ"
+        }
+      ],
+      "resourceName": "projects/msccp-test/global/backendServices",
+      "numResponseItems": "166",
+      "request": {
+        "@type": "type.googleapis.com/compute.backendServices.aggregatedList"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "global"
+        ]
+      }
+    },
+    "insertId": "-l0tnz8d8tvi",
+    "resource": {
+      "type": "gce_backend_service",
+      "labels": {
+        "backend_service_id": "",
+        "project_id": "msccp-test",
+        "location": "global"
+      }
+    },
+    "timestamp": "2025-02-18T11:51:15.351862Z",
+    "severity": "INFO",
+    "labels": {
+      "compute.googleapis.com/root_trigger_id": "37950d52-2ac6-4a5c-b46d-909898ce8720"
+    },
+    "logName": "projects/msccp-test/logs/cloudaudit.googleapis.com%2Fdata_access",
+    "receiveTimestamp": "2025-02-18T11:51:16.405706985Z"
+  }
+]

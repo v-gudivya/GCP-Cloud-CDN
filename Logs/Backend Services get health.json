@@ -1,0 +1,60 @@
+[
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "scuba@np-lab.co.il"
+      },
+      "requestMetadata": {
+        "callerIp": "121.241.55.74",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36,gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2025-02-18T11:47:27.933649Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "compute.googleapis.com",
+      "methodName": "beta.compute.backendServices.getHealth",
+      "authorizationInfo": [
+        {
+          "resource": "projects/msccp-test/global/backendServices/cdn-backend",
+          "permission": "compute.backendServices.get",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/msccp-test/global/backendServices/cdn-backend",
+            "type": "compute.backendServices"
+          },
+          "permissionType": "ADMIN_READ"
+        }
+      ],
+      "resourceName": "projects/msccp-test/global/backendServices/cdn-backend",
+      "request": {
+        "@type": "type.googleapis.com/compute.backendServices.getHealth",
+        "group": "projects/msccp-test/zones/us-central1-c/instanceGroups/instance-group-cdn"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "global"
+        ]
+      }
+    },
+    "insertId": "agd84e2c9nu",
+    "resource": {
+      "type": "gce_backend_service",
+      "labels": {
+        "backend_service_id": "985226515389729840",
+        "location": "global",
+        "project_id": "msccp-test"
+      }
+    },
+    "timestamp": "2025-02-18T11:47:27.398748Z",
+    "severity": "INFO",
+    "labels": {
+      "compute.googleapis.com/root_trigger_id": "e4ffa5ed-9644-41fd-a61b-879cc3a9b08b"
+    },
+    "logName": "projects/msccp-test/logs/cloudaudit.googleapis.com%2Fdata_access",
+    "receiveTimestamp": "2025-02-18T11:47:28.074318217Z"
+  }
+]

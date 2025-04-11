@@ -1,0 +1,40 @@
+[
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "scuba@np-lab.co.il"
+      },
+      "requestMetadata": {
+        "callerIp": "2409:40f0:11cb:e30b:dcd1:a4e3:c04d:bc12",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36,gzip(gfe),gzip(gfe)"
+      },
+      "serviceName": "compute.googleapis.com",
+      "methodName": "v1.compute.backendBuckets.insert",
+      "resourceName": "projects/msccp-test/global/backendBuckets/cdn-vgudivya-bb",
+      "request": {
+        "@type": "type.googleapis.com/compute.backendBuckets.insert"
+      }
+    },
+    "insertId": "-12q53oct7k",
+    "resource": {
+      "type": "gce_backend_bucket",
+      "labels": {
+        "project_id": "msccp-test",
+        "backend_bucket_id": "7707357792605749926"
+      }
+    },
+    "timestamp": "2025-02-20T19:02:44.956765Z",
+    "severity": "NOTICE",
+    "labels": {
+      "compute.googleapis.com/root_trigger_id": "a49a5392-262e-4235-a848-9a9c915a4609"
+    },
+    "logName": "projects/msccp-test/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operation-1740078153186-62e978433bd0d-6d7228f3-b7df732e",
+      "producer": "compute.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2025-02-20T19:02:45.574824176Z"
+  }
+]
